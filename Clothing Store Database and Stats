@@ -1,0 +1,28 @@
+--Create a clothing store database
+
+CREATE TABLE store (id integer primary key, name text, color text, quantity integer, price integer);
+
+INSERT INTO store VALUES (1, "polo", "blue", 3, 5);
+INSERT INTO store VALUES (2, "dress", "red", 4, 10);
+INSERT INTO store VALUES (3, "jeans", "blue", 3, 10);
+INSERT INTO store VALUES (4, "white shirts", "white", 5, 10);
+INSERT INTO store VALUES (5, "black jeans", "black", 3, 20);
+INSERT INTO store VALUES (6, "socks","white", 3, 10);
+INSERT INTO store VALUES (7, "cargo shorts", "khaki", 4, 10);
+INSERT INTO store Values (8, "sweatshirt", "gray", 3, 34);
+INSERT INTO store VALUES (9, "tshirt", "orange", 2, 10);
+INSERT INTO store VALUES (10, "dress shirt", "white", 34, 10);
+INSERT INTO store VALUES (11, "girls shirt", "pink", 10, 5);
+INSERT INTO store VALUES (12, "boys shirt", "blue", 20, 5);
+INSERT INTO store VALUES (13, "skirt", "yellow", 9, 10);
+INSERT INTO store VALUES (14, "sweatshirts", "pink", 9, 8);
+INSERT INTO store VALUES (15, "shorts", "white", 8, 10);
+
+
+-- Display the database ordered by price
+SELECT * from store ORDER BY price asc;
+
+-- Display the highest retail price in the store
+SELECT MAX(price) from store;
+
+
